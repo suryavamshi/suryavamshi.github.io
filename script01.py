@@ -1,21 +1,5 @@
 
-tree_to_json = """If (feature 1 <= 3.6600000858307)
- If (feature 0 <= 4.7199997901917)
-  Predict: 0.0
- Else (feature 0 > 4.7199997901917)
-  If (feature 2 <= 3.6500000953674)
-   If (feature 2 <= 1.6299999952316)
-    Predict: 1.0
-   Else (feature 2 > 1.6299999952316)
-    If (feature 0 <= 5.0999999046326)
-     Predict: 1.0
-    Else (feature 0 > 5.0999999046326)
-     Predict: 0.0
-  Else (feature 2 > 3.6500000953674)
-   Predict: 0.0
-Else (feature 1 > 3.6600000858307)
- Predict: 1.0
-"""
+tree_to_json = open("tree_string.txt", 'r').read()
 
 import json
 
